@@ -10,10 +10,19 @@
       "D": "Tubérculo genital"
     },
     "respuesta_correcta": "B",
-    "justificacion": "En el feto masculino, la testosterona promueve la diferenciación de los conductos mesonéfricos (Wolff) en las estructuras del tracto reproductivo interno.",
-    "tags": [
-      "embriologia",
-      "anatomia"
-    ]
+    "justificacion": "En el feto masculino, la testosterona promueve la diferenciación de los conductos mesonéfricos (Wolff) en las estructuras del tracto reproductivo interno."
+  },
+  {
+    "id": "URO-002",
+    "categoria": "Embriología y Anatomía",
+    "pregunta": "¿A partir de qué semana de gestación comienza la producción de orina por el metanefros?",
+    "opciones": {
+      "A": "6ª semana",
+      "B": "8ª semana",
+      "C": "10ª semana",
+      "D": "12ª semana"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El metanefros (riñón definitivo) se vuelve funcional aproximadamente en la 10ª semana de gestación."
   }
 ]

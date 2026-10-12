@@ -1,27 +1,47 @@
-import React, { useState } from 'react';
-import preguntas from './data/preguntas.json';
+import React, { useState, useEffect } from 'react';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from './firebase';
+import Auth from './components/Auth';
+import Dashboard from './components/Dashboard';
+import Simulator from './components/Simulator';
+import ErrorReview from './components/ErrorReview';
+import History from './components/History';
 
 export default function App() {
-  const [preguntaActual, setPreguntaActual] = useState(0);
+  const [user, setUser] = useState(null);
+  const [currentView, setCurrentView] = useState('dashboard'); // dashboard, sim, errors, history
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      setLoading(false);
+    });
+    return unsubscribe;
+  }, []);
+
+  if (loading) return <div className="min-h-screen flex items-center justify-center bg-slate-50"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>;
+
+  if (!user) return <Auth />;
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <div className="max-w-2xl w-full bg-white rounded-xl shadow-lg p-8">
-        <h1 className="text-2xl font-bold text-slate-800 mb-6">Simulador Urológico - CONAMEU</h1>
-        <div className="mb-4">
-          <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
-            {preguntas[preguntaActual].categoria}
-          </span>
-          <h2 className="text-xl mt-2 text-gray-800">{preguntas[preguntaActual].pregunta}</h2>
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
+      <nav className="bg-white border-b px-6 py-4 flex justify-between items-center shadow-sm sticky top-0 z-10">
+        <h1 className="text-xl font-bold text-blue-900 cursor-pointer" onClick={() => setCurrentView('dashboard')}>
+          CONAMEU Prep
+        </h1>
+        <div className="flex gap-4">
+          <button onClick={() => setCurrentView('dashboard')} className="text-slate-600 hover:text-blue-600 font-medium">Menú</button>
+          <button onClick={() => auth.signOut()} className="text-red-600 hover:text-red-800 font-medium">Salir</button>
         </div>
-        <div className="space-y-3 mt-6">
-          {Object.entries(preguntas[preguntaActual].opciones).map(([key, value]) => (
-            <button key={key} className="w-full text-left p-4 rounded-lg border border-gray-200 hover:border-blue-500 hover:bg-blue-50 transition-colors">
-              <span className="font-bold mr-2">{key})</span> {value}
-            </button>
-          ))}
-        </div>
-      </div>
+      </nav>
+      
+      <main className="max-w-4xl mx-auto p-6">
+        {currentView === 'dashboard' && <Dashboard setView={setCurrentView} />}
+        {currentView === 'sim' && <Simulator setView={setCurrentView} user={user} />}
+        {currentView === 'errors' && <ErrorReview setView={setCurrentView} user={user} />}
+        {currentView === 'history' && <History setView={setCurrentView} user={user} />}
+      </main>
     </div>
   );
 }
