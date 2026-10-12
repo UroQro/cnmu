@@ -1,0 +1,19 @@
+[
+  {
+    "id": "URO-001",
+    "categoria": "Embriología y Anatomía",
+    "pregunta": "Durante el desarrollo embrionario, ¿cuál es la estructura precursora del epidídimo, los conductos deferentes y las vesículas seminales?",
+    "opciones": {
+      "A": "Conducto de Müller (paramesonéfrico)",
+      "B": "Conducto de Wolff (mesonéfrico)",
+      "C": "Seno urogenital",
+      "D": "Tubérculo genital"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "En el feto masculino, la testosterona promueve la diferenciación de los conductos mesonéfricos (Wolff) en las estructuras del tracto reproductivo interno.",
+    "tags": [
+      "embriologia",
+      "anatomia"
+    ]
+  }
+]
