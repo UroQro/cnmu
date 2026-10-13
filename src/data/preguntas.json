@@ -1,28 +1,62 @@
 [
   {
-    "id": "URO-001",
-    "categoria": "Embriología y Anatomía",
+    "id": "URO-001", "categoria": "Embriología y Anatomía",
     "pregunta": "Durante el desarrollo embrionario, ¿cuál es la estructura precursora del epidídimo, los conductos deferentes y las vesículas seminales?",
-    "opciones": {
-      "A": "Conducto de Müller (paramesonéfrico)",
-      "B": "Conducto de Wolff (mesonéfrico)",
-      "C": "Seno urogenital",
-      "D": "Tubérculo genital"
-    },
-    "respuesta_correcta": "B",
-    "justificacion": "En el feto masculino, la testosterona promueve la diferenciación de los conductos mesonéfricos (Wolff) en las estructuras del tracto reproductivo interno."
+    "opciones": { "A": "Conducto de Müller (paramesonéfrico)", "B": "Conducto de Wolff (mesonéfrico)", "C": "Seno urogenital", "D": "Tubérculo genital" },
+    "respuesta_correcta": "B", "justificacion": "En el feto masculino, la testosterona promueve la diferenciación de los conductos mesonéfricos (Wolff) en las estructuras del tracto reproductivo interno."
   },
   {
-    "id": "URO-002",
-    "categoria": "Embriología y Anatomía",
+    "id": "URO-002", "categoria": "Embriología y Anatomía",
     "pregunta": "¿A partir de qué semana de gestación comienza la producción de orina por el metanefros?",
-    "opciones": {
-      "A": "6ª semana",
-      "B": "8ª semana",
-      "C": "10ª semana",
-      "D": "12ª semana"
-    },
-    "respuesta_correcta": "C",
-    "justificacion": "El metanefros (riñón definitivo) se vuelve funcional aproximadamente en la 10ª semana de gestación."
+    "opciones": { "A": "6ª semana", "B": "8ª semana", "C": "10ª semana", "D": "12ª semana" },
+    "respuesta_correcta": "C", "justificacion": "El metanefros (riñón definitivo) se vuelve funcional aproximadamente en la 10ª semana de gestación."
+  },
+  {
+    "id": "URO-003", "categoria": "Embriología y Anatomía",
+    "pregunta": "¿Cuál es el origen nervioso del reflejo cremastérico?",
+    "opciones": { "A": "Nervio ilioinguinal (L1)", "B": "Nervio genitofemoral (L1-L2)", "C": "Nervio pudendo (S2-S4)", "D": "Nervio obturador" },
+    "respuesta_correcta": "B", "justificacion": "El nervio genitofemoral, específicamente su rama genital, es responsable de la vía eferente del reflejo cremastérico."
+  },
+  {
+    "id": "URO-004", "categoria": "Tumores Suprarrenales y Renales",
+    "pregunta": "Un paciente presenta un incidentaloma suprarrenal. ¿Cuál de las siguientes unidades Hounsfield (UH) en una TC sin contraste sugiere fuertemente una lesión benigna (adenoma)?",
+    "opciones": { "A": "< 10 UH", "B": "> 20 UH", "C": "Entre 30 y 40 UH", "D": "Presencia de calcificaciones centrales" },
+    "respuesta_correcta": "A", "justificacion": "Los adenomas ricos en lípidos suelen presentar una atenuación baja (< 10 UH) en la tomografía computarizada sin contraste."
+  },
+  {
+    "id": "URO-005", "categoria": "Tumores Suprarrenales y Renales",
+    "pregunta": "¿Cuál es el subtipo histológico más común del carcinoma de células renales (RCC)?",
+    "opciones": { "A": "Cromófobo", "B": "Papilar Tipo I", "C": "Células claras", "D": "Conductos colectores" },
+    "respuesta_correcta": "C", "justificacion": "El carcinoma de células claras representa aproximadamente el 75-80% de los casos de cáncer renal cortical."
+  },
+  {
+    "id": "URO-006", "categoria": "Tumores Suprarrenales y Renales",
+    "pregunta": "De acuerdo con las guías de la AUA, ¿cuál es el rango de referencia de PSA 'normal' para un hombre de 40-49 años?",
+    "opciones": { "A": "0-2.5 ng/dL", "B": "0-3.5 ng/dL", "C": "0-4.5 ng/dL", "D": "0-6.5 ng/dL" },
+    "respuesta_correcta": "A", "justificacion": "El PSA tiene rangos ajustados por edad; para la cuarta década de vida, el límite superior suele ser 2.5 ng/dL para evitar omitir diagnósticos tempranos."
+  },
+  {
+    "id": "URO-007", "categoria": "Tumores Suprarrenales y Renales",
+    "pregunta": "¿En qué zona de la próstata se origina la mayoría de los adenocarcinomas prostáticos?",
+    "opciones": { "A": "Zona de transición", "B": "Zona central", "C": "Zona periférica", "D": "Estroma fibromuscular anterior" },
+    "respuesta_correcta": "C", "justificacion": "Aproximadamente el 70-80% de los cánceres de próstata se originan en la zona periférica."
+  },
+  {
+    "id": "URO-008", "categoria": "Tumores Suprarrenales y Renales",
+    "pregunta": "En el manejo del cáncer de vejiga no músculo-invasor (NMIBC) de alto riesgo, ¿cuál es el tratamiento intravesical de elección tras la RTU-V?",
+    "opciones": { "A": "Mitomicina C dosis única", "B": "BCG (Bacilo de Calmette-Guérin)", "C": "Gemcitabina", "D": "Interferón alfa" },
+    "respuesta_correcta": "B", "justificacion": "La inmunoterapia con BCG es el estándar de oro para reducir la recurrencia y progresión en pacientes con NMIBC de alto riesgo."
+  },
+  {
+    "id": "URO-009", "categoria": "Tumores Suprarrenales y Renales",
+    "pregunta": "¿Cuál es la anomalía urológica asociada más frecuente en niños con criptorquidia?",
+    "opciones": { "A": "Persistencia del conducto peritoneovaginal", "B": "Reflujo vesicoureteral", "C": "Hipospadias", "D": "Válvulas de uretra posterior" },
+    "respuesta_correcta": "A", "justificacion": "La mayoría de los testículos no descendidos tienen un proceso vaginal patente asociado."
+  },
+  {
+    "id": "URO-010", "categoria": "Tumores Suprarrenales y Renales",
+    "pregunta": "Según la clasificación de la SFU (Society for Fetal Urology), ¿qué grado de hidronefrosis presenta dilatación de la pelvis renal y cálices, pero con parénquima renal conservado?",
+    "opciones": { "A": "Grado 1", "B": "Grado 2", "C": "Grado 3", "D": "Grado 4" },
+    "respuesta_correcta": "C", "justificacion": "El grado 3 de la SFU se caracteriza por dilatación de la pelvis y todos los cálices, mientras que el grado 4 añade el adelgazamiento del parénquima."
   }
 ]
